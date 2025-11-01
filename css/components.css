@@ -1,0 +1,105 @@
+/* ======================================================
+   1. BOTÕES
+   ====================================================== */
+button, .btn {
+  background: var(--cor-secundaria);
+  color: var(--cor-texto-claro);
+  border: none;
+  padding: var(--space-2) var(--space-3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: var(--fs-sm);
+}
+
+button:hover, .btn:hover {
+  background: var(--cor-destaque);
+}
+
+button:disabled {
+  background: var(--cor-neutra-clara);
+  cursor: not-allowed;
+}
+
+/* ======================================================
+   2. CARDS (Projetos)
+   ====================================================== */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: var(--space-3);
+}
+
+/* ======================================================
+   3. FORMULÁRIOS
+   ====================================================== */
+input, textarea, select {
+  width: 100%;
+  padding: var(--space-2);
+  border: 1px solid var(--cor-neutra-clara);
+  border-radius: 6px;
+  font-size: var(--fs-sm);
+  font-family: var(--fonte-principal);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--cor-primaria);
+  outline: none;
+}
+
+/* Labels e agrupamentos */
+label {
+  display: block;
+  margin-bottom: var(--space-1);
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+fieldset {
+  border: 1px solid var(--cor-neutra-clara);
+  padding: var(--space-3);
+  border-radius: 6px;
+  margin-bottom: var(--space-3);
+}
+
+legend {
+  font-weight: bold;
+  color: var(--cor-primaria);
+}
+
+/* ======================================================
+   4. ALERTAS E MENSAGENS
+   ====================================================== */
+.alert {
+  background: var(--cor-destaque);
+  color: var(--cor-texto-claro);
+  padding: var(--space-2);
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+
+/* ======================================================
+   5. BADGES E TAGS
+   ====================================================== */
+.badge {
+  background: var(--cor-secundaria);
+  color: var(--cor-texto-claro);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
